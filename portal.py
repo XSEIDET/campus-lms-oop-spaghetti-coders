@@ -9,7 +9,7 @@ class CoursePortal:
         print(f"Deadline passed. Portal for {self.course_name} is now locked.")
 
     def accept_submission(self, student_name):
-        if self.__is locked:
+        if self.__is_locked:
             raise ValueError("Error: Deadline has passed. Submission rejected,")
         else:
             print(f"Submission accepted for {student_name}.")
