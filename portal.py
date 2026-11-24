@@ -5,12 +5,9 @@ class CoursePortal:
 
     def lock_portal(self):
         self.__is_locked = True
-        print(f"The portal for {self.course_name} is now locked.")
-        print(f"Deadline passed. Portal for {self.course_name} is now locked.")
+        print("Deadline passed. Portal locked.")
 
     def accept_submission(self, student_name):
         if self.__is_locked:
-            raise ValueError("Error: Deadline has passed. Submission rejected,")
-        else:
-            print(f"Submission accepted for {student_name}.")
-
+            raise ValueError("Error: Deadline has passed. Submission rejected.")
+        print(f"Submission accepted for {student_name}.")
