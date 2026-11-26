@@ -43,5 +43,3 @@ try:
     portal.accept_submission(student.student_name)
 except ValueError as e:
     print(f"Blocked late submission: {e}")
-
-print(f"Portal locked: {portal.is_locked()}")
